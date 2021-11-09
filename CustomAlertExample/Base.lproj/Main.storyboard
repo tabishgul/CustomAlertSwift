@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomAlertExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NoL-Mq-uOJ">
+                                <rect key="frame" x="30" y="40" width="315" height="50"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="plQ-QE-OoS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Show Alert">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapShowAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N7L-gV-hP5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NoL-Mq-uOJ" secondAttribute="trailing" constant="30" id="2Yt-Xb-U9j"/>
+                            <constraint firstItem="NoL-Mq-uOJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="NDZ-vt-XGC"/>
+                            <constraint firstItem="NoL-Mq-uOJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="hD5-x7-ASg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="99"/>
+        </scene>
+        <!--Custom Alert Controller-->
+        <scene sceneID="iL3-Ma-HeH">
+            <objects>
+                <viewController storyboardIdentifier="CustomAlertController" id="ggl-Ti-AbZ" customClass="CustomAlertController" customModule="CustomAlertExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FC0-B3-iyg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Syu-jA-VMF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CGn-CS-hNH">
+                                <rect key="frame" x="52.5" y="208.5" width="270" height="210"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11J-zi-qCM">
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0Z-nf-HGR">
+                                                <rect key="frame" x="114" y="13" width="42" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="B0Z-nf-HGR" firstAttribute="centerY" secondItem="11J-zi-qCM" secondAttribute="centerY" id="G7A-oh-P62"/>
+                                            <constraint firstItem="B0Z-nf-HGR" firstAttribute="centerX" secondItem="11J-zi-qCM" secondAttribute="centerX" id="dXV-yY-87U"/>
+                                            <constraint firstAttribute="height" constant="50" id="t4O-fS-DmL"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gb9-MQ-Cet">
+                                        <rect key="frame" x="0.0" y="50" width="270" height="110"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comfirm the Alert!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Q0-64-0eN">
+                                                <rect key="frame" x="61" y="44" width="148.5" height="22"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.96078431369999995" green="0.83921568629999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="8Q0-64-0eN" firstAttribute="centerX" secondItem="gb9-MQ-Cet" secondAttribute="centerX" id="2rM-6H-ue0"/>
+                                            <constraint firstItem="8Q0-64-0eN" firstAttribute="centerY" secondItem="gb9-MQ-Cet" secondAttribute="centerY" id="VJf-54-mIz"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uEN-jg-pqZ">
+                                        <rect key="frame" x="0.0" y="160" width="270" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lju-Xi-1gy">
+                                                <rect key="frame" x="0.0" y="0.0" width="270" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <state key="normal" title="Dismiss">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="tapDismissAlert:" destination="ggl-Ti-AbZ" eventType="touchUpInside" id="HQx-jB-vAm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Lju-Xi-1gy" firstAttribute="leading" secondItem="uEN-jg-pqZ" secondAttribute="leading" id="Twk-ZJ-c04"/>
+                                            <constraint firstAttribute="height" constant="50" id="bBp-f1-e7T"/>
+                                            <constraint firstItem="Lju-Xi-1gy" firstAttribute="top" secondItem="uEN-jg-pqZ" secondAttribute="top" id="gVt-pE-guC"/>
+                                            <constraint firstAttribute="bottom" secondItem="Lju-Xi-1gy" secondAttribute="bottom" id="k7Q-Wc-gPG"/>
+                                            <constraint firstAttribute="trailing" secondItem="Lju-Xi-1gy" secondAttribute="trailing" id="l59-6R-Nao"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="BKP-OH-XuB"/>
+                                    <constraint firstItem="11J-zi-qCM" firstAttribute="top" secondItem="CGn-CS-hNH" secondAttribute="top" id="I0F-L0-245"/>
+                                    <constraint firstItem="gb9-MQ-Cet" firstAttribute="leading" secondItem="CGn-CS-hNH" secondAttribute="leading" id="Ipm-9g-Dqn"/>
+                                    <constraint firstItem="11J-zi-qCM" firstAttribute="leading" secondItem="CGn-CS-hNH" secondAttribute="leading" id="K42-2M-Dpv"/>
+                                    <constraint firstAttribute="trailing" secondItem="gb9-MQ-Cet" secondAttribute="trailing" id="Lcf-eL-OOH"/>
+                                    <constraint firstItem="uEN-jg-pqZ" firstAttribute="top" secondItem="gb9-MQ-Cet" secondAttribute="bottom" id="PY3-YZ-ohE"/>
+                                    <constraint firstAttribute="trailing" secondItem="uEN-jg-pqZ" secondAttribute="trailing" id="Pd9-SE-7sn"/>
+                                    <constraint firstAttribute="trailing" secondItem="11J-zi-qCM" secondAttribute="trailing" id="RIN-Cr-JvU"/>
+                                    <constraint firstItem="gb9-MQ-Cet" firstAttribute="top" secondItem="11J-zi-qCM" secondAttribute="bottom" id="SSQ-9u-wfa"/>
+                                    <constraint firstItem="uEN-jg-pqZ" firstAttribute="leading" secondItem="CGn-CS-hNH" secondAttribute="leading" id="TrU-3L-iDh"/>
+                                    <constraint firstAttribute="width" constant="270" id="j7u-uk-FS1"/>
+                                    <constraint firstAttribute="bottom" secondItem="uEN-jg-pqZ" secondAttribute="bottom" id="zEu-P1-45a"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Y7Y-Pv-jMm"/>
+                        <constraints>
+                            <constraint firstItem="CGn-CS-hNH" firstAttribute="centerX" secondItem="FC0-B3-iyg" secondAttribute="centerX" id="HW4-VS-E2v"/>
+                            <constraint firstItem="Syu-jA-VMF" firstAttribute="leading" secondItem="Y7Y-Pv-jMm" secondAttribute="leading" id="K9A-Kt-TWL"/>
+                            <constraint firstItem="Y7Y-Pv-jMm" firstAttribute="trailing" secondItem="Syu-jA-VMF" secondAttribute="trailing" id="Kl6-Id-JlH"/>
+                            <constraint firstItem="Syu-jA-VMF" firstAttribute="top" secondItem="FC0-B3-iyg" secondAttribute="top" id="hcA-q1-b83"/>
+                            <constraint firstItem="Y7Y-Pv-jMm" firstAttribute="bottom" secondItem="Syu-jA-VMF" secondAttribute="bottom" id="ood-SO-gNM"/>
+                            <constraint firstItem="CGn-CS-hNH" firstAttribute="centerY" secondItem="FC0-B3-iyg" secondAttribute="centerY" constant="-20" id="wML-qg-jxj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backView" destination="Syu-jA-VMF" id="uFm-AW-y0P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ypg-31-J85" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="99"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
